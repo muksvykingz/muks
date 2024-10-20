@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Vykingz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2 style="color: rgb(236, 16, 163);">HV</h2>
+
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">Menu</button>
+
+        <!-- <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Hotel Vykingz</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amenities.html">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dining">Dining</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a class="btn btn-primary ml-auto" href="booking.html">Book Now</a>
+            </div>
+        </nav>
+        <br>
+
+
+        <!-- <a class="cta" href="">Book Now</a> -->
+        <form id="booking-form" method="POST" action="/book">
+            <label for="checkin">Check-in:</label>
+            <input type="date" id="checkin" required>
+            <label for="checkout">Check-out:</label>
+            <input type="date" id="checkout" required>
+            <button type="submit">Check Availability</button>
+        </form>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Hotel Vykingz</h1>
+        <p>Your comfort is our priority. Experience luxury and relaxation like never before.</p>
+        <input type="text" id="search-input" placeholder="Search...">
+        <ul id="search-results"></ul>
+        <a class="cta" href="booking.html">Book Now</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Hotel Vykingz, we offer a unique blend of luxury, comfort, and style. Nestled in the heart of Kampala, our
+            hotel provides guests with unparalleled service and a serene environment to unwind. Each room is
+            meticulously designed to ensure a restful stay, with modern amenities and breathtaking views.</p>
+        <p>Whether you are here for business or leisure, our dedicated staff is committed to making your experience
+            memorable. Join us for a truly unforgettable stay.</p>
+    </section>
+
+    <!-- <section id="rooms">
+        <h2>Rooms</h2>
+        <div class="room">
+            <img src="imgs/9.jpg" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>Luxurious room with a beautiful view.</p>
+            <p>Price: $150/night</p>
+            <a href="" class="cta">Book Now</a>
+        </div>
+        <div class="room">
+            <img src="imgs/1.jpg" alt="Suite Room">
+            <h3>Suite Room</h3>
+            <p>Spacious and elegantly designed for ultimate comfort.</p>
+            <p>Price: $200/night</p>
+            <a href="" class="cta">Book Now</a>
+        </div>
+    </section> -->
+    <section id="rooms" class="container">
+        <h2>Rooms</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/9.jpg" alt="Deluxe Room">
+                    <div class="card-body">
+                        <h3 class="card-title">Deluxe Room</h3>
+                        <p class="card-text">Luxurious room with a beautiful view.</p>
+                        <p>Price: $150/night</p>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/1.jpg" alt="Suite Room">
+                    <div class="card-body">
+                        <h3 class="card-title">Suite Room</h3>
+                        <p class="card-text">Spacious and elegantly designed for ultimate comfort.</p>
+                        <p>Price: $200/night</p>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="amenities">
+        <h2>Amenities</h2>
+        <ul>
+            <li>Swimming Pool <img src="imgs/se.jpg" alt="Swimming Pool"></li>
+            <li>Free Wi-Fi <img src="imgs/8.jpg" alt="Free Wi-Fi"></li>
+            <li>Gym <img src="imgs/215x1421552473549gym.jpg" alt="Gym"></li>
+            <li>Spa Services <img src="imgs/re.jpg" alt="Spa Services"></li>
+        </ul>
+    </section>
+
+    <section id="location">
+        <h2>Our Location</h2>
+        <p>Find us at: Kagoma<br>P.O. Box 23<br>Kampala</p>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2042755.714525848!2d32.58300000000001!3d0.3170000000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1728933003870!5m2!1sen!2sug"
+                width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="slider">
+            <img class="slide" src="imgs/2.jpg" alt="Hotel Image 1">
+            <img class="slide" src="imgs/9.jpg" alt="Hotel Image 2">
+            <img class="slide" src="imgs/10.jpg" alt="Hotel Image 3">
+            <img class="slide" src="imgs/se.jpg" alt="Hotel Image 4">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section> -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="slider">
+            <img class="slide active" src="imgs/2.jpg" alt="Hotel Image 1">
+            <img class="slide" src="imgs/9.jpg" alt="Hotel Image 2">
+            <img class="slide" src="imgs/10.jpg" alt="Hotel Image 3">
+            <img class="slide" src="imgs/se.jpg" alt="Hotel Image 4">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Amazing stay! Highly recommend."</p>
+            <footer>- Jane Doe <br>usa ambassador</footer>
+        </blockquote>
+        <blockquote>
+            <p>"Best hotel experience I've ever seen!"</p>
+            <footer>- John Smith<br>marketing executives<br>kampala</footer>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@vykingz.com</p>
+        <p>Phone: +256 754 275 084</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Vykingz. All rights reserved.</p>
+        <!-- <div class="social-media">
+            <a href="#">Facebook<i class="fa fa-facebook"></i></a>
+            <a href="#">Instagram<i class="fa fa-instagram"></i></a>
+            <a href="#">Twitter<i class="fa fa-twitter"></i></a>
+        </div> -->
+        <div class="social-media">
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

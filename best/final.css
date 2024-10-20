@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #fff8e1;
+}
+
+/* Header Styles */
+header {
+    background-color: #4A90E2; /* Primary Color */
+    color: rgb(80, 6, 6);
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: blueviolet !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFC107; /* Accent Color */
+}
+
+.btn-primary {
+    background-color: #FFC107; /* Accent Color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffca28; /* Lighter Accent */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    /* background: url(imgs/t.jpg) no-repeat center center; */
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background: #fff8e1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Rooms Section */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Amenities Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 20px;
+}
+
+.list-group-item img {
+    margin-right: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A90E2; /* Primary Color */
+    color: white;
+    padding: 20px 0;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: #FFC107; /* Accent Color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+}
